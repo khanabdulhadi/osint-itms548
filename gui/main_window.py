@@ -1,10 +1,6 @@
-import sys
-import threading
+import sys, threading, qdarkstyle
 from pathlib import Path
-
-from PyQt5 import QtWidgets, QtCore, QtGui, QtWebEngineWidgets
-import qdarkstyle
-
+from PyQt5 import QtWidgets, QtCore, QtGui, QtWebEngineWidgets 
 from data_sources import ip_api, subdomains, gdelt, wikidata, urlscan
 from analysis.data_aggregator import save_csv
 
