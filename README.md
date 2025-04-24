@@ -1,4 +1,4 @@
-# OSINT Dashboard (v2)
+# OSINT Dashboard
 
 Open‑source intelligence desktop application that helps investigators collect
 and correlate publicly available information about IPs, domains and keywords.
