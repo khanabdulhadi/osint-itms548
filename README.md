@@ -45,7 +45,7 @@ python main.py
 - Click **Search** to start a lookup; a progress dialog appears until results load.
 - Click **Export CSV** in the status bar after running lookups to save all gathered data.
 
-Results are saved into timestamped CSV files in an `exports/` folder.
+Results are saved into timestamped CSV files in an `reportss/` folder.
 
 ## Project Structure
 
