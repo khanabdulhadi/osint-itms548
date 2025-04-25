@@ -2,6 +2,13 @@
 
 A PyQt5-based desktop application for performing common OSINT (Open Source Intelligence) lookups, including IP geolocation, DNS subdomain enumeration, keyword-based news/entity search, and URL scanning.
 
+## Table of Contents
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Reports](#reports)
+- 
 ## Features
 
 - **Geolocation Lookup**: Enter an IP address or hostname to retrieve geolocation data and view it on an interactive Leaflet map.
@@ -45,23 +52,24 @@ python main.py
 - Click **Search** to start a lookup; a progress dialog appears until results load.
 - Click **Export CSV** in the status bar after running lookups to save all gathered data.
 
-Results are saved into timestamped CSV files in an `reportss/` folder.
-
 ## Project Structure
 
 ```
 ├── gui/
-│   └── main_window.py     # PyQt5 GUI implementation
+│   └── main_window.py         # PyQt5 GUI implementation
 ├── data_sources/
-│   ├── ip_api.py          # IP geolocation API wrapper
-│   ├── subdomains.py      # DNS enumeration module
-│   ├── gdelt.py           # GDELT article search wrapper
-│   ├── wikidata.py        # Wikidata entity search
-│   └── urlscan.py         # urlscan.io scanning module
+│   ├── ip_api.py              # IP geolocation API wrapper
+│   ├── subdomains.py          # DNS enumeration module
+│   ├── gdelt.py               # GDELT article search wrapper
+│   ├── wikidata.py            # Wikidata entity search
+│   └── urlscan.py             # urlscan.io scanning module
 ├── analysis/
-│   └── data_aggregator.py # CSV export logic
-├── reports/               # CSV export file
-├── main.py                # Entry point
-├── requirements.txt       # Python dependencies
-└── README.md              # This file
+│   └── data_aggregator.py     # CSV export logic
+├── reports/                   # CSV export output directory
+├── main.py                    # Entry point
+├── requirements.txt           # Python dependencies
+└── README.md                  # This file
 ```
+
+## Reports
+All CSV exports are saved in the `reports/` directory with timestamped filenames.
