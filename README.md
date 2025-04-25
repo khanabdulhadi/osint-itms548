@@ -1,4 +1,4 @@
-# OSINT Dashboard
+# OSINT App
 
 A PyQt5-based desktop application for performing common OSINT (Open Source Intelligence) lookups, including IP geolocation, DNS subdomain enumeration, keyword-based news/entity search, and URL scanning.
 
