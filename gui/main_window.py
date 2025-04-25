@@ -6,7 +6,6 @@ from analysis.data_aggregator import save_csv
 
 
 class LoadingOverlay(QtWidgets.QWidget):
-    """Semi-transparent overlay with centered spinner."""
     def __init__(self, parent):
         super().__init__(parent)
         self.setAttribute(QtCore.Qt.WA_NoSystemBackground)
@@ -34,7 +33,6 @@ class LoadingOverlay(QtWidgets.QWidget):
 
 
 class BaseTab(QtWidgets.QWidget):
-    """Mixin to give all tabs a uniform button styling."""
     def style_button(self, btn: QtWidgets.QPushButton):
         btn.setFont(QtGui.QFont("Segoe UI", 12, QtGui.QFont.Bold))
         btn.setMinimumSize(140, 36)
