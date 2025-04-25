@@ -52,7 +52,7 @@ class GeolocationTab(BaseTab):
         inp = QtWidgets.QGroupBox("IP / Hostname Lookup")
         il = QtWidgets.QHBoxLayout(inp)
         self.ip_input = QtWidgets.QLineEdit()
-        self.ip_input.setPlaceholderText("e.g. 8.8.8.8")
+        self.ip_input.setPlaceholderText("e.g. 8.8.8.8 or example.com")
         self.search_btn = QtWidgets.QPushButton("Search")
         self.style_button(self.search_btn)
         il.addWidget(self.ip_input)
