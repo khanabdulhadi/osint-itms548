@@ -8,7 +8,7 @@ A PyQt5-based desktop application for performing common OSINT (Open Source Intel
 - [Usage](#usage)
 - [Project Structure](#project-structure)
 - [Reports](#reports)
-- 
+
 ## Features
 
 - **Geolocation Lookup**: Enter an IP address or hostname to retrieve geolocation data and view it on an interactive Leaflet map.
